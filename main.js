@@ -3,8 +3,11 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-
-
+const hearts = document.querySelectorAll("span.like-glyph")
+console.log(hearts)
+hearts.forEach(element => {
+  element.addEventListener('click',mimicServerCall )
+});
 
 
 //------------------------------------------------------------------------------
